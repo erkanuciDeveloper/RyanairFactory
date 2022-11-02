@@ -1,0 +1,101 @@
+﻿@*<link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/select/1.4.0/css/select.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css" rel="stylesheet" />*@
+
+
+<div class="app-content content container-fluid">
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-6 col-xs-12 mb-1">
+                <h2 class="content-header-title"></h2>
+            </div>
+
+        </div>
+        <div class="content-body">
+            <!-- Basic form layout section start -->
+            <section id="basic-form-layouts">
+                <div class="row match-height">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title" id="basic-layout-form">Activities Info</h4>
+                                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                                        <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body collapse in">
+                                <div class="card-block">
+
+
+                                    <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
+                                        <div class="dataTable-top">
+                                            <table class="table dataTable-table" id="table1">
+                                                <thead>
+
+                                                    <tr>
+
+                                                        <th data-sortable="" style="width: 19.6038%;">
+                                                            <a href="#" class="dataTable-sorter">Activity Name</a>
+                                                        </th>
+                                                        <th data-sortable="" style="width: 30.0592%;">
+                                                            <a href="#" class="dataTable-sorter">ActivityType</a>
+                                                        </th>
+                                                        <th data-sortable="" style="width: 27.8188%;">
+                                                            <a href="#" class="dataTable-sorter">ActivityStartTime</a>
+                                                        </th>
+                                                        <th data-sortable="" style="width: 18.6703%;">
+                                                            <a href="#" class="dataTable-sorter"> ActivityEndTime</a>
+                                                        </th>
+                                                        <th data-sortable="" style="width: 19.9772%;">
+                                                            <a href="#" class="dataTable-sorter">CreaDate</a>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @if (ViewBag.ActivityData != null)
+                                                    {
+
+
+
+                                                        @foreach (var item in (ViewBag.ActivityData as IQueryable<Data.Entity.Activities.ActivityData>))
+                                                        {
+                                                            <tr>
+                                                                <td>@item.ActivityName</td>
+                                                                <td>@item.ActivityType</td>
+                                                                <td>@item.ActivityStarTime</td>
+                                                                <td>@item.ActivityEndTime</td>
+                                                                <td>@item.CreaDate</td>
+
+                                                                <td><a href="editDesignation.php"><svg style="height:18px;width:18px" class="svg-inline--fa fa-pen fa-w-16 text-success" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="pen" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"></path></svg><!-- <i class="fa fa-pen text-success"></i> --></a>   <a href="editDesignation.php"><svg style="height:18px;width:18px" class="svg-inline--fa fa-trash fa-w-14 text-danger" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash text-danger"></i> --></a></td>
+                                                            </tr>
+                                                        }
+                                                    }
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+            </section>
+            <!-- // Basic form layout section end -->
+        </div>
+    </div>
+</div>
+

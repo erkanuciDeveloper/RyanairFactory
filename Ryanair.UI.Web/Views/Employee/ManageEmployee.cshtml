@@ -1,0 +1,76 @@
+﻿
+
+<div class="app-content content container-fluid">
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+
+            <!-- Recent invoice with Statistics -->
+            <div class="row match-height">
+       
+                <div class="col-xl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Workers</h4>
+                            <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                            <div class="heading-elements">
+                                <ul class="list-inline mb-0">
+                                    <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                                    <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                      
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Worker ID#</th>
+                                            <th>Worker ID</th>
+                                            <th>Worker Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (ViewBag.AllWorkers != null)
+                                        {
+
+
+
+                                            @foreach (var item in (ViewBag.AllWorkers as IQueryable<Data.Entity.Workers.Workers>))
+                                            {
+                                        <tr>
+                                            <td class="text-truncate"><a href="#">@item.Id</a></td>
+                                            <td class="text-truncate">@item.WorkerName.</td>
+                                            @{
+                                                if (item.Status == 1)
+                                                {
+                                                    <td class="text-truncate"><span class="tag tag-default tag-success">Active</span></td>
+                                                }
+                                                else if (item.Status == 2)
+                                                {
+                                                    <td class="text-truncate"><span class="tag tag-default tag-warning">Working</span></td>
+                                                }
+                                                else
+                                                {
+                                                    <td class="text-truncate"><span class="tag tag-default tag-danger">Resting</span></td>
+                                                }
+                                            }
+
+                                        </tr>
+                                            }
+                                        }
+
+                           
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+</div>

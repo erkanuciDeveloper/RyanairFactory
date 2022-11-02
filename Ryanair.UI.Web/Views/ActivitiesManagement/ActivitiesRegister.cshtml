@@ -1,0 +1,138 @@
+﻿
+
+
+<div class="app-content content container-fluid">
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-6 col-xs-12 mb-1">
+                <h2 class="content-header-title"></h2>
+            </div>
+            <div class="content-header-right breadcrumbs-right breadcrumbs-top col-md-6 col-xs-12">
+                <div class="breadcrumb-wrapper col-xs-12">
+                    <ol class="breadcrumb">
+                        @*<li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Form Layouts</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#">Basic Forms</a>
+                        </li>*@
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <!-- Basic form layout section start -->
+            <section id="basic-form-layouts">
+                <div class="row match-height">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title" id="basic-layout-form">Activity Register</h4>
+                                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                                        <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body collapse in">
+                                <div class="card-block">
+
+                                    <form class="form">
+                                        <div class="form-body">
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="projectinput1">Activity Name</label>
+                                                        <input type="text" id="IdActivityName" class="form-control" placeholder="Activity Name" name="fname" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="projectinput5">Activity Type</label>
+                                                        <select id="IdActivityType" name="interested" class="form-control" required>
+                                                            <option value="none" selected="" disabled="">Choose...</option>
+                                                            <option value="1">Build Component</option>
+                                                            <option value="2">Build Machine</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="issueinput4">Activities Start Time</label>
+                                                        <input type="date" id="IdActivityStarTime" class="form-control" name="datefixed" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Fixed" data-original-title="" title="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="issueinput4">Activities End Time</label>
+                                                        <input type="date" id="IdActivityEndTime" class="form-control" name="datefixed" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Fixed" data-original-title="" title="" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="projectinput5">Workers</label>
+                                                        <select id="IdActivityWorkers" name="interested" class="form-control" multiple>
+                                                            @if (ViewBag.Workers != null)
+                                                            {
+                                                                <option value="none" selected="" disabled="">Interested in</option>
+                                                                @foreach (var item in (ViewBag.Workers as IQueryable<Data.Entity.Workers.Workers>))
+                                                                {
+                                                                    <option value="@item.Id">@item.WorkerName</option>
+                                                                }
+                                                            }
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                            <div class="form-group">
+                                                <label for="projectinput8">About Project</label>
+                                                <textarea id="IdActivityDetails" rows="3" class="form-control" name="comment" placeholder="About Project" required></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-actions right">
+                                            <button type="button" class="btn btn-outline-red  " style="width:200px!important">
+                                                <i class="icon-cross2"></i> Cancel
+                                            </button>
+                                            <button type="button" class="btn btn-green col-6" style="width:200px!important" id="btnActivityRegister">
+                                                <i class="icon-check2"></i> Save
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </section>
+            <!-- // Basic form layout section end -->
+        </div>
+    </div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////-->

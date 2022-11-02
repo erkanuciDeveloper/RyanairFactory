@@ -1,0 +1,15 @@
+C:\Workplace\RyanairFactory\Busines.Model\bin\Debug\net5.0\Busines.Model.deps.json
+C:\Workplace\RyanairFactory\Busines.Model\bin\Debug\net5.0\Busines.Model.dll
+C:\Workplace\RyanairFactory\Busines.Model\bin\Debug\net5.0\ref\Busines.Model.dll
+C:\Workplace\RyanairFactory\Busines.Model\bin\Debug\net5.0\Busines.Model.pdb
+C:\Workplace\RyanairFactory\Busines.Model\bin\Debug\net5.0\Business.Enumeration.dll
+C:\Workplace\RyanairFactory\Busines.Model\bin\Debug\net5.0\Business.Enumeration.pdb
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.csproj.AssemblyReference.cache
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.AssemblyInfoInputs.cache
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.AssemblyInfo.cs
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.csproj.CoreCompileInputs.cache
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.csproj.CopyComplete
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.dll
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\ref\Busines.Model.dll
+C:\Workplace\RyanairFactory\Busines.Model\obj\Debug\net5.0\Busines.Model.pdb

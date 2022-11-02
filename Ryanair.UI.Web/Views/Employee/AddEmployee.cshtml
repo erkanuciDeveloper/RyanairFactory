@@ -1,0 +1,136 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    .formscon {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid red;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+    }
+</style>
+<div class="app-content content container-fluid">
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-6 col-xs-12 mb-1">
+                <h2 class="content-header-title"></h2>
+            </div>
+            <div class="content-header-right breadcrumbs-right breadcrumbs-top col-md-6 col-xs-12">
+                <div class="breadcrumb-wrapper col-xs-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Form Layouts</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#">Basic Forms</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <!-- Basic form layout section start -->
+            <section id="basic-form-layouts">
+                <div class="row match-height">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title" id="basic-layout-form">Worker Details</h4>
+                                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                                        <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body collapse in">
+                                <div class="card-block">
+
+                                    <form class="form" action="" name="registration">
+                                        <div class="form-body">
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="projectinput1">Full Name</label>
+                                                        <input type="text" id="idEmpName" class="form-control" placeholder="Full Name" name="fname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="projectinput5">Deapartment</label>
+                                                        <select id="idEmpDepartman" name="interested" class="form-control">
+                                                            <option value="none" selected="" disabled="">Choose...</option>
+                                                            <option value="Build Component">Build Component</option>
+                                                            <option value="Build Machine<">Build Machine</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="projectinput1">Email</label>
+                                                        <input type="email" id="IdEmpMail" class="form-control" placeholder="Email" name="fmail">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="projectinput1">Contact</label>
+                                                        <input type="tel" id="IdEmpContact" class="form-control" placeholder="Contact" name="fname">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             
+                                            <div class="form-group">
+                                                <label for="projectinput8">Summary</label>
+                                                <textarea id="IdEmpSummary" rows="3" class="form-control" name="comment" placeholder="Summary"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-actions right">
+                                            <button type="button" class="btn btn-outline-red  " style="width:200px!important">
+                                                <i class="icon-cross2"></i> Cancel
+                                            </button>
+                                            <button type="button" id="bntAddEmploye" class="btn btn-green col-6" style="width:200px!important">
+                                                <i class="icon-check2"></i> Save
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </section>
+            <!-- // Basic form layout section end -->
+        </div>
+    </div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////-->

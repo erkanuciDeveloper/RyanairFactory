@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Busines.ServicesModel/1.0.0": {
+        "dependencies": {
+          "Business.Enumeration": "1.0.0"
+        },
+        "runtime": {
+          "Busines.ServicesModel.dll": {}
+        }
+      },
+      "Business.Enumeration/1.0.0": {
+        "runtime": {
+          "Business.Enumeration.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Busines.ServicesModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Business.Enumeration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

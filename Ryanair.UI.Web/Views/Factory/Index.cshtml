@@ -1,0 +1,53 @@
+﻿<div class="app-content content container-fluid">
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+            <!-- stats -->
+            <div class="row">
+                @if (ViewBag.ActivityData != null)
+                {
+
+
+
+                    @foreach (var item in (ViewBag.ActivityData as IQueryable<Data.Entity.Activities.ActivityData>))
+                    {
+
+
+                        <div class="col-xl-3 col-lg-6 col-xs-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-block">
+                                        <div class="media">
+                                            <div class="media-body text-xs-left">
+                                                @{
+                                                    var random = new Random();
+                                                    var color = String.Format("#{0:X6}", random.Next(0x1000000));
+                                                }
+                                                <h3 class="pink">@item.Id</h3>
+                                                <span>
+                                                    Activity Name:<i class="" id="idlabelcol"
+                                                    style="color:@color"></i> @item.ActivityName
+                                                 </span>
+
+                                                    </div>
+                                                     <div class="media-right media-middle">
+                                                      <i class="icon-table deep font-large-1 float-xs-right" id="idlabelcol"
+                                                      style="color:@color">
+                                                          </i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                }
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

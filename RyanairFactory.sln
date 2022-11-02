@@ -1,0 +1,150 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{648A8E36-45B6-4914-B905-DEBE9672B22A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ryanair.UI.Web", "Ryanair.UI.Web\Ryanair.UI.Web.csproj", "{06D4E75C-3ED8-4C10-BE89-11DB9D2B88C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{29AA7283-97EB-4DB3-B456-4CC2C58DCA7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{E4C7AA5D-A06A-42F7-8E55-3CBEC708F1BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{83D9BC0A-F54F-4B86-A5F9-C1C24CFD5208}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{65D8EA34-3C50-40E3-98C9-D3532B1AAED7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperMigrations", "DapperMigrations\DapperMigrations.csproj", "{9B019ABE-0C8B-41D1-AC0F-09B0981A2C3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Daper", "Data.Daper\Data.Daper.csproj", "{98D0584B-8D68-4AD7-B012-0C85945A6241}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Configuration", "Framework.Configuration\Framework.Configuration.csproj", "{63AFD145-D652-4030-AAD3-8235C7FC969D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Worker", "Business.Worker\Business.Worker.csproj", "{499F4C67-53CD-4217-9B92-DEBB82B9436D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Activities", "Busines.Activities\Business.Activities.csproj", "{22EAEEB4-43C2-4261-A58C-EFBF5480C8B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.ServicesModel", "Busines.Model\Business.ServicesModel.csproj", "{D2789D14-A36E-4363-8EAC-922E04C87A21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Enumeration", "Business.Enumeration\Business.Enumeration.csproj", "{CAB68FEB-184B-4984-AF98-AA8B45324ABE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Entity", "Data.Entity\Data.Entity.csproj", "{7618808E-DE68-454B-923A-DAD68C5E3329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Worker", "Worker", "{109783F1-0C20-42D5-8E8B-DAD21688D90D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Worker.Api", "Worker.Api\Worker.Api.csproj", "{81FBA01A-D965-44A4-AEE2-AEC3B9257801}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06D4E75C-3ED8-4C10-BE89-11DB9D2B88C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D4E75C-3ED8-4C10-BE89-11DB9D2B88C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D4E75C-3ED8-4C10-BE89-11DB9D2B88C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D4E75C-3ED8-4C10-BE89-11DB9D2B88C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B019ABE-0C8B-41D1-AC0F-09B0981A2C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B019ABE-0C8B-41D1-AC0F-09B0981A2C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B019ABE-0C8B-41D1-AC0F-09B0981A2C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B019ABE-0C8B-41D1-AC0F-09B0981A2C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D0584B-8D68-4AD7-B012-0C85945A6241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D0584B-8D68-4AD7-B012-0C85945A6241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D0584B-8D68-4AD7-B012-0C85945A6241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D0584B-8D68-4AD7-B012-0C85945A6241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AFD145-D652-4030-AAD3-8235C7FC969D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AFD145-D652-4030-AAD3-8235C7FC969D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AFD145-D652-4030-AAD3-8235C7FC969D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AFD145-D652-4030-AAD3-8235C7FC969D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499F4C67-53CD-4217-9B92-DEBB82B9436D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499F4C67-53CD-4217-9B92-DEBB82B9436D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499F4C67-53CD-4217-9B92-DEBB82B9436D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499F4C67-53CD-4217-9B92-DEBB82B9436D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22EAEEB4-43C2-4261-A58C-EFBF5480C8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EAEEB4-43C2-4261-A58C-EFBF5480C8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EAEEB4-43C2-4261-A58C-EFBF5480C8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EAEEB4-43C2-4261-A58C-EFBF5480C8B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2789D14-A36E-4363-8EAC-922E04C87A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2789D14-A36E-4363-8EAC-922E04C87A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2789D14-A36E-4363-8EAC-922E04C87A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2789D14-A36E-4363-8EAC-922E04C87A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB68FEB-184B-4984-AF98-AA8B45324ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB68FEB-184B-4984-AF98-AA8B45324ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB68FEB-184B-4984-AF98-AA8B45324ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB68FEB-184B-4984-AF98-AA8B45324ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7618808E-DE68-454B-923A-DAD68C5E3329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7618808E-DE68-454B-923A-DAD68C5E3329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7618808E-DE68-454B-923A-DAD68C5E3329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7618808E-DE68-454B-923A-DAD68C5E3329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81FBA01A-D965-44A4-AEE2-AEC3B9257801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81FBA01A-D965-44A4-AEE2-AEC3B9257801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81FBA01A-D965-44A4-AEE2-AEC3B9257801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81FBA01A-D965-44A4-AEE2-AEC3B9257801}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06D4E75C-3ED8-4C10-BE89-11DB9D2B88C4} = {648A8E36-45B6-4914-B905-DEBE9672B22A}
+		{9B019ABE-0C8B-41D1-AC0F-09B0981A2C3B} = {83D9BC0A-F54F-4B86-A5F9-C1C24CFD5208}
+		{98D0584B-8D68-4AD7-B012-0C85945A6241} = {83D9BC0A-F54F-4B86-A5F9-C1C24CFD5208}
+		{63AFD145-D652-4030-AAD3-8235C7FC969D} = {E4C7AA5D-A06A-42F7-8E55-3CBEC708F1BF}
+		{499F4C67-53CD-4217-9B92-DEBB82B9436D} = {65D8EA34-3C50-40E3-98C9-D3532B1AAED7}
+		{22EAEEB4-43C2-4261-A58C-EFBF5480C8B4} = {65D8EA34-3C50-40E3-98C9-D3532B1AAED7}
+		{D2789D14-A36E-4363-8EAC-922E04C87A21} = {65D8EA34-3C50-40E3-98C9-D3532B1AAED7}
+		{CAB68FEB-184B-4984-AF98-AA8B45324ABE} = {65D8EA34-3C50-40E3-98C9-D3532B1AAED7}
+		{7618808E-DE68-454B-923A-DAD68C5E3329} = {83D9BC0A-F54F-4B86-A5F9-C1C24CFD5208}
+		{109783F1-0C20-42D5-8E8B-DAD21688D90D} = {29AA7283-97EB-4DB3-B456-4CC2C58DCA7B}
+		{81FBA01A-D965-44A4-AEE2-AEC3B9257801} = {109783F1-0C20-42D5-8E8B-DAD21688D90D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFD25966-455C-4E11-93CB-0F46FB30DFB8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/erkanuci
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Busines.Activities\\Business.Activities.csproj
+		SccProjectTopLevelParentUniqueName1 = RyanairFactory.sln
+		SccProjectName1 = Busines.Activities
+		SccLocalPath1 = Busines.Activities
+		SccProjectUniqueName2 = Busines.Model\\Business.ServicesModel.csproj
+		SccProjectTopLevelParentUniqueName2 = RyanairFactory.sln
+		SccProjectName2 = Busines.Model
+		SccLocalPath2 = Busines.Model
+		SccProjectUniqueName3 = Business.Enumeration\\Business.Enumeration.csproj
+		SccProjectTopLevelParentUniqueName3 = RyanairFactory.sln
+		SccProjectName3 = Business.Enumeration
+		SccLocalPath3 = Business.Enumeration
+		SccProjectUniqueName4 = Business.Worker\\Business.Worker.csproj
+		SccProjectTopLevelParentUniqueName4 = RyanairFactory.sln
+		SccProjectName4 = Business.Worker
+		SccLocalPath4 = Business.Worker
+		SccProjectUniqueName5 = DapperMigrations\\DapperMigrations.csproj
+		SccProjectTopLevelParentUniqueName5 = RyanairFactory.sln
+		SccProjectName5 = DapperMigrations
+		SccLocalPath5 = DapperMigrations
+		SccProjectUniqueName6 = Data.Daper\\Data.Daper.csproj
+		SccProjectTopLevelParentUniqueName6 = RyanairFactory.sln
+		SccProjectName6 = Data.Daper
+		SccLocalPath6 = Data.Daper
+		SccProjectUniqueName7 = Data.Entity\\Data.Entity.csproj
+		SccProjectTopLevelParentUniqueName7 = RyanairFactory.sln
+		SccProjectName7 = Data.Entity
+		SccLocalPath7 = Data.Entity
+		SccProjectUniqueName8 = Framework.Configuration\\Framework.Configuration.csproj
+		SccProjectTopLevelParentUniqueName8 = RyanairFactory.sln
+		SccProjectName8 = Framework.Configuration
+		SccLocalPath8 = Framework.Configuration
+		SccProjectUniqueName9 = Ryanair.UI.Web\\Ryanair.UI.Web.csproj
+		SccProjectTopLevelParentUniqueName9 = RyanairFactory.sln
+		SccProjectName9 = Ryanair.UI.Web
+		SccLocalPath9 = Ryanair.UI.Web
+		SccProjectUniqueName10 = Worker.Api\\Worker.Api.csproj
+		SccProjectTopLevelParentUniqueName10 = RyanairFactory.sln
+		SccProjectName10 = Worker.Api
+		SccLocalPath10 = Worker.Api
+	EndGlobalSection
+EndGlobal
